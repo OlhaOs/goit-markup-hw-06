@@ -1,9 +1,11 @@
-# goit-markup-hw-05
+# goit-markup-hw-06
 
-here add position
+here add form and transition on modal
+(checkbox use, close button little js)
 
 
-add sprite.svg doesn't work on my chrome local security things...
+!!! sprite.svg doesn't work on my chrome local security things...
+
 run chrome from cmd 
 
 Windows:
