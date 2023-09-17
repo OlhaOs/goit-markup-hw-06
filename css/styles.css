@@ -1250,6 +1250,11 @@ input[type='checkbox']:checked + .modal-form-agreement .modal-form-checkbox {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+@media not (hover: hover) {
+  .mobile-menu-link:active {
+    color: var(--pressed-state-color);
+  }
+}
 .mobile-menu-link.current {
   color: var(--pressed-state-color);
 }
