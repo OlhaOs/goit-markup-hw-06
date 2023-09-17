@@ -155,6 +155,12 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media not (hover: hover) {
+  .social-link-item:active {
+    background-color: var(--pressed-state-color);
+  }
+}
+
 .social-link-item:hover,
 .social-link-item:focus {
   background-color: var(--pressed-state-color);
@@ -417,6 +423,12 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media not (hover: hover) {
+  .hero-button:active {
+    background-color: var(--pressed-state-color);
+  }
+}
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--pressed-state-color);
@@ -606,6 +618,15 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media not (hover: hover) {
+  .customers-link:active {
+    border-color: var(--pressed-state-color);
+    color: var(--pressed-state-color);
+  }
+  .customers-link:active .customer-icon {
+    fill: var(--pressed-state-color);
+  }
+}
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--pressed-state-color);
@@ -701,11 +722,15 @@ img {
 .footer-links {
   gap: 16px;
 }
+@media not (hover: hover) {
+  .footer-social-link-item:active {
+    background-color: var(--footer-accent-color);
+  }
+}
 .footer-social-link-item:hover,
 .footer-social-link-item:focus {
   background-color: var(--footer-accent-color);
 }
-
 .form-container {
   text-align: center;
 }
@@ -784,6 +809,11 @@ img {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media not (hover: hover) {
+  .footer-form-btn:active {
+    background-color: var(--pressed-state-color);
+  }
+}
 .footer-form-btn:hover,
 .footer-form-btn:focus {
   background-color: var(--pressed-state-color);
@@ -836,6 +866,16 @@ img {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media not (hover: hover) {
+  .filter-btn:active {
+    background-color: var(--pressed-state-color);
+    color: var(--white-text-bg-color);
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--pressed-state-color);
@@ -871,6 +911,13 @@ img {
 .portfolio-link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media not (hover: hover) {
+  .portfolio-link:active {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+}
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -895,11 +942,13 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-link:hover .overlay-text,
-.portfolio-link:focus .overlay-text {
-  transform: translateY(0%);
+@media (hover: hover) {
+  .portfolio-link:hover .overlay-text,
+  .portfolio-link:focus .overlay-text {
+    transform: translateY(0%);
+  }
 }
+
 .portfolio-card-text-container {
   padding: 32px 16px;
   border: 1px solid var(--border-accent-color);
@@ -1184,7 +1233,6 @@ input[type='checkbox']:checked + .modal-form-agreement .modal-form-checkbox {
   .social-link-item:active {
     background-color: var(--pressed-state-color);
   }
-
 }
 
 .mobile-menu-list {
