@@ -749,11 +749,15 @@ img {
 
 .footer-form {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 16px;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .footer-form {
+    flex-direction: column;
+  }
+}
 @media only screen and (min-width: 768px) {
   .footer-form {
     gap: 24px;
@@ -828,6 +832,14 @@ img {
     background-color: var(--pressed-state-color);
   }
 }
+
+@media only screen and (max-width: 767.98px) {
+  .footer-form-btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .footer-form-btn:hover,
 .footer-form-btn:focus {
   background-color: var(--pressed-state-color);
